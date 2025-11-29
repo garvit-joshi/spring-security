@@ -54,9 +54,6 @@ public final class HaveIBeenPwnedRestApiPasswordChecker implements CompromisedPa
 
 	private RestClient restClient = RestClient.builder().baseUrl(API_URL).build();
 
-	public HaveIBeenPwnedRestApiPasswordChecker() {
-	}
-
 	@Override
 	public CompromisedPasswordDecision check(@Nullable String password) {
 		if (password == null) {
